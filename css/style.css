@@ -1,0 +1,137 @@
+/* universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* main styling */
+.main-heading {
+    margin: 15px 0px 30px;
+    font-size: 2.5em;
+}
+
+.check {
+    color: white;
+    border-radius: 5px;
+    padding: 15px 20px;
+    display: none;
+}
+
+.error {
+    background-color: crimson;
+}
+
+.success {
+    background-color: forestgreen;
+}
+
+.removed {
+    background-color: coral;
+}
+
+label {
+    margin: 20px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+#submit-btn  {
+    margin: 15px 0 30px;
+    width: 100px;
+    padding: 10px 20px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 1.4px;
+    border-color: #333;
+}
+
+#submit-btn:active {
+    background-color: #333;
+    color: white;
+}
+
+.hr {
+    height: 1px;
+    background-color: lightgray;
+    margin: 10px 0 30px;
+}
+
+.hr-table {
+    margin-bottom: 20px;
+}
+
+.table {
+    margin-top: 60px;
+}
+
+.table p {
+    font-weight: bold;
+}
+
+.table p,
+.table-data p {
+    width: calc(100% / 3);
+    word-wrap: wrap;
+}
+
+.table-data p {
+    font-size: 0.92em;
+}
+
+i {
+    margin-left: -50px;
+    cursor: pointer;
+}
+
+/* layout styling */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+label,
+input {
+    display: block;
+}
+
+.table,
+.books {
+    display: flex;
+}
+
+/* media query */
+@media only screen and (max-width: 550px) {
+    .books {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    i {
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+}
